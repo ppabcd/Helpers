@@ -1,4 +1,4 @@
-# String
+# String Helpers
 ## How to use?
 First time you must include src/Str.php in your project for use this helper. Coming soon i will add this project with composer. For Example code you can see in example folder.
 ## What i can do?
