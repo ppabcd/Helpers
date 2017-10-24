@@ -4,7 +4,8 @@ First time you must include src/Str.php in your project for use this helper. Com
 ## What i can do?
 Here in list.
 1. Strip Quotes
-2. Random String
+2. Strip Slashes
+3. Random String
 ### Strip Quotes
 You can use this helper for string or multiple data with array.
 ```php
