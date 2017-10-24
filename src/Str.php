@@ -15,4 +15,3 @@ class Str
         return $string;
     }
 }
-echo $random = Str::random(32);
