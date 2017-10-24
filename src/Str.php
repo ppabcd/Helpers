@@ -27,7 +27,6 @@ class Str
             $data = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
             while(($len = strlen($string))< $length){
               $string .= $data[rand(0,strlen($data)-1)];
-              //$string .= $data[rand(0,strlen(($data)-1))];
             }
           break;
         case 'numeric':
