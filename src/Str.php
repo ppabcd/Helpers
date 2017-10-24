@@ -4,9 +4,9 @@
  */
 class Str
 {
-  /**
-   * Alternator
-   */
+    /**
+     * Alternator
+     */
     public static function alternator()
     {
         static $i;
@@ -17,11 +17,12 @@ class Str
         $args = func_get_args();
         return $args[($i++ % count($args))];
     }
-  /**
-   * Strip Slashes
-   * @param array|string $str
-   * @return mixed
-   */
+
+    /**
+     * Strip Slashes
+     * @param array|string $str
+     * @return mixed
+     */
     public static function strip_slashes($str)
     {
         if (!is_array($str)) {
@@ -32,11 +33,12 @@ class Str
         }
         return $str;
     }
-  /**
-   * Strip Quotes
-   * @param  array|string  $str
-   * @return mixed
-   */
+
+    /**
+     * Strip Quotes
+     * @param  array|string  $str
+     * @return mixed
+     */
     public static function strip_quotes($str)
     {
         if (!is_array($str)) {
@@ -47,18 +49,19 @@ class Str
         }
         return $str;
     }
-  /**
-   * Type Of Random
-   * - alnum = Alphanumeric
-   * - alpha = Alphabet
-   * - numeric
-   * - md5 ($length always 32 character)
-   * - hex ($length must be even)
-   *
-   * @param int    $length
-   * @param string $type
-   * @return string
-   */
+
+    /**
+     * Type Of Random
+     * - alnum = Alphanumeric
+     * - alpha = Alphabet
+     * - numeric
+     * - md5 ($length always 32 character)
+     * - hex ($length must be even)
+     *
+     * @param int    $length
+     * @param string $type
+     * @return string
+     */
     public static function random($length = 16, $type = 'alnum')
     {
         $string = '';
@@ -104,9 +107,9 @@ class Str
     }
 
     /**
-     *
-     *
-     *
+     * @param string $needle
+     * @param string $haystack
+     * @return bool
      */
     public static function startWith($needle, $haystack)
     {
