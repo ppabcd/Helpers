@@ -47,6 +47,9 @@ class Str
             $string = bin2hex($bytes);
           }
           break;
+        case 'binary':
+          $string = random_bytes($length);
+          break;
         default:
           $string = 'Your random type not found';
           break;

@@ -14,5 +14,7 @@ echo Str::random(18,'alpha')."\n";
 echo Str::random(18,'numeric')."\n";
 // MD5
 echo Str::random(null,'md5')."\n";
+// Byte
+echo Str::random(18,'binary')."\n";
 // Not Defined Random String
 echo Str::random(null,'nothing')."\n";
