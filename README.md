@@ -6,6 +6,7 @@ Here in list.
 1. Strip Quotes
 2. Strip Slashes
 3. Random String
+4. Alternator
 ### Strip Quotes
 You can use this helper for string or multiple data with array.
 ```php
@@ -36,4 +37,13 @@ Here in list.
   Str::random(18,'md5'); //MD5 result
   Str::random(18,'hex'); //Hex result
   Str::random(18,'binary'); //Binary result
+```
+### Alternator
+You can use this helper for alternating.
+
+```php
+  for ($i = 0; $i < 10; $i++)
+      {
+        echo Str::alternator('one', 'two', 'three', 'four', 'five');
+      }
 ```

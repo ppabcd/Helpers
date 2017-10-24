@@ -41,3 +41,10 @@ $arr_str = [
 echo Str::strip_slashes($string)."\n";
 // Array
 var_dump(Str::strip_slashes($arr_str))."\n";
+
+//Alternator
+
+for ($i = 0; $i < 10; $i++)
+  {
+    echo Str::alternator('one', 'two', 'three', 'four', 'five','six');
+  }

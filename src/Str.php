@@ -5,6 +5,20 @@
 class Str
 {
   /*
+  * Alternator
+  */
+  public static function alternator()
+	{
+		static $i;
+		if (func_num_args() === 0)
+		{
+			$i = 0;
+			return '';
+		}
+		$args = func_get_args();
+		return $args[($i++ % count($args))];
+	}
+  /*
   * Strip Slashes
   * @param array or string
   */
