@@ -5,6 +5,19 @@
 class Str
 {
   /*
+  * Strip Quotes
+  * @param array or string
+  */
+  public static function strip_quotes($str){
+    if(!is_array($str)){
+      return str_replace(['"',"'"],'',$str);
+    }
+    foreach ($str as $key => $value) {
+      $str[$key] = str_replace(['"',"'"],'',$value);
+    }
+    return $str;
+  }
+  /*
   * Type Of Random
   * - alnum = Alphanumeric
   * - alpha = Alphabet
