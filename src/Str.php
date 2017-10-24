@@ -1,6 +1,6 @@
 <?php
 /**
- * Random Class
+ * String Class
  */
 class Str
 {
