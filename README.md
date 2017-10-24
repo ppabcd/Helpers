@@ -11,6 +11,12 @@ You can use this helper for string or multiple data with array.
   $data = 'Test String "';
   Str::strip_quotes($data);
 ```
+### Strip Slashes
+You can use this helper for string or multiple data with array.
+```php
+  $data = 'Test String \' ';
+  Str::strip_slashes($data);
+```
 ### Random String
 You can use this helper for random string.
 Here in list.

@@ -5,6 +5,19 @@
 class Str
 {
   /*
+  * Strip Slashes
+  * @param array or string
+  */
+  public static function strip_slashes($str){
+    if(!is_array($str)){
+      return stripslashes($str);
+    }
+    foreach($str as $key => $values){
+      $str[$key] = stripslashes($values);
+    }
+    return $str;
+  }
+  /*
   * Strip Quotes
   * @param array or string
   */

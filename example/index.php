@@ -30,4 +30,14 @@ $arr_str = [
 // String
 echo Str::strip_quotes($string)."\n";
 // Array
-var_dump($arr_str)."\n";
+var_dump(Str::strip_quotes($arr_str))."\n";
+
+//Example Strip Slashes
+$string = "Hello \"";
+$arr_str = [
+  0=> 'Hello \'',
+  1=> 'Hey \''
+];
+echo Str::strip_slashes($string)."\n";
+// Array
+var_dump(Str::strip_slashes($arr_str))."\n";
