@@ -7,5 +7,10 @@
     	"psr-0": {
     		"": "src/"
     	}
+    },
+    "autoload-dev": {
+    	"psr-0": {
+    		"": "tests/"
+    	}
     }
 }
