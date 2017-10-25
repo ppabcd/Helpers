@@ -7,17 +7,17 @@ require_once('../src/Str.php');
 // Default Usage
 echo Str::random(18)."\n";
 // Alphanumeric
-echo Str::random(18,'alnum')."\n";
+echo Str::random(18, 'alnum')."\n";
 // Alphabet
-echo Str::random(18,'alpha')."\n";
+echo Str::random(18, 'alpha')."\n";
 // Numeric
-echo Str::random(18,'numeric')."\n";
+echo Str::random(18, 'numeric')."\n";
 // MD5
-echo Str::random(null,'md5')."\n";
+echo Str::random(null, 'md5')."\n";
 // Byte
-echo Str::random(18,'binary')."\n";
+echo Str::random(18, 'binary')."\n";
 // Not Defined Random String
-echo Str::random(null,'nothing')."\n";
+echo Str::random(null, 'nothing')."\n";
 
 //
 // Example Strip Quotes
@@ -44,7 +44,6 @@ var_dump(Str::strip_slashes($arr_str))."\n";
 
 //Alternator
 
-for ($i = 0; $i < 10; $i++)
-  {
-    echo Str::alternator('one', 'two', 'three', 'four', 'five','six');
-  }
+for ($i = 0; $i < 10; $i++) {
+    echo Str::alternator('one', 'two', 'three', 'four', 'five', 'six');
+}
