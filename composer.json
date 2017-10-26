@@ -3,6 +3,7 @@
     "description": "Helper for project",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.6",
         "phpunit/phpunit": "^6.4"
