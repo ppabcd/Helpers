@@ -1,6 +1,11 @@
 {
     "name": "ppabcd/helpers",
     "description": "Helper for project",
+    "keywords": [
+        "helpers",
+        "library",
+        "helpers library"
+    ],
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
@@ -8,9 +13,16 @@
         "php": ">=5.6",
         "phpunit/phpunit": "^6.4"
     },
+    "authors": [
+        {
+            "name": "Reza Juliandri",
+            "email": "rezajuliandri20@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
     	"psr-0": {
-    		"": "src/"
+    		"Helpers": "src/"
     	}
     },
     "autoload-dev": {
