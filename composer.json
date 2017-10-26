@@ -1,4 +1,7 @@
 {
+    "name": "ppabcd/helpers",
+    "description": "Helper for project",
+    "type": "library",
     "license": "MIT",
     "require": {
         "php": ">=5.6",
