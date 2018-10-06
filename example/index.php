@@ -47,3 +47,16 @@ var_dump(Str::strip_slashes($arr_str))."\n";
 for ($i = 0; $i < 10; $i++) {
     echo Str::alternator('one', 'two', 'three', 'four', 'five', 'six');
 }
+
+//
+// Example Reverse Case
+//
+$string = 'tESt stRinG';
+$arr_str = [
+  'tESt stRìnG',
+  'HëLlO wORld'
+];
+//String
+echo Str::reverse_case($string);
+// Array
+var_dump(Str::reverse_case($arr_str));

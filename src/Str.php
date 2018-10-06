@@ -115,4 +115,21 @@ class Str
     {
         return substr((string)$haystack, 0, strlen($needle)) === (string) $needle;
     }
+
+    /**
+     * Reverse case
+     * @param $str
+     * @return array|string
+     */
+    public static function reverse_case($str)
+    {
+        if (!is_array($str)) {
+            return mb_strtolower($str) ^ mb_strtoupper($str) ^ $str;;
+        }
+        foreach ($str as $key => $value) {
+            $str[$key] = mb_strtolower($value) ^ mb_strtoupper($value) ^ $value;;
+        }
+        return $str;
+    }
+
 }
