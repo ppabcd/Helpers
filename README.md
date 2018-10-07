@@ -8,6 +8,7 @@ Here in list.
 2. Strip Slashes
 3. Random String
 4. Alternator
+### Methods
 #### Strip Quotes
 You can use this helper for string or multiple data with array.
 ```php
@@ -62,7 +63,7 @@ You can use this helper for making a string or array of strings title case.
     $data = 'test strinG';
     Str::title_case($data);
 ```
- 
+
 #### Limit
 You can use this helper to limit a string or array of strings up to specified length.
 
