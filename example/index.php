@@ -60,3 +60,36 @@ $arr_str = [
 echo Str::reverse_case($string);
 // Array
 var_dump(Str::reverse_case($arr_str));
+
+//
+// Example Title Case
+//
+$string = 'hello world';
+$arr_str = [
+  'hello test',
+  'hEllo 4 tEst'
+];
+//String
+echo Str::title_case($string);
+// Array
+var_dump(Str::title_case($arr_str));
+
+//
+// Example Limit
+//
+$string = 'hello world';
+$arr_str = [
+    'hello test',
+    'hEllo 4 tEst'
+];
+//String
+echo Str::limit($string, 2);
+// Array
+var_dump(Str::limit($arr_str, 3));
+
+//
+// Example Contains
+//
+$string = 'hello world';
+// String
+var_dump(Str::contains($string, 'hell'));

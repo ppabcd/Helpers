@@ -55,3 +55,26 @@ You can use this helper to reverse the case of each letter in a string.
     $data = 'tESt stRinG';
     Str::reverse_case($data);
 ```
+#### Title Case
+You can use this helper for making a string or array of strings title case.
+
+```php
+    $data = 'test strinG';
+    Str::title_case($data);
+```
+ 
+#### Limit
+You can use this helper to limit a string or array of strings up to specified length.
+
+```php
+    $data = 'test string';
+    Str::limit($data, 4);
+```
+
+#### Contains
+You can use this helper to check if specific word or key exists in a string.
+
+```php
+    $data = 'test string';
+    Str::contains($data, 'test');
+```
