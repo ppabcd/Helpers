@@ -48,6 +48,13 @@ You can use this helper for alternating.
         echo Str::alternator('one', 'two', 'three', 'four', 'five');
       }
 ```
+
+#### Reverse Case
+You can use this helper to reverse the case of each letter in a string.
+ ```php
+    $data = 'tESt stRinG';
+    Str::reverse_case($data);
+```
 #### Title Case
 You can use this helper for making a string or array of strings title case.
 

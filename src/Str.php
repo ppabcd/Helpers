@@ -117,6 +117,18 @@ class Str
     }
 
     /**
+     * Reverse case
+     * @param $str
+     * @return array|string
+     */
+    public static function reverse_case($str)
+    {
+        if (!is_array($str)) {
+            return mb_strtolower($str) ^ mb_strtoupper($str) ^ $str;;
+        }
+        foreach ($str as $key => $value) {
+            $str[$key] = mb_strtolower($value) ^ mb_strtoupper($value) ^ $value;;
+     /**
      * @param $str
      * @return array|string
      */
@@ -130,7 +142,6 @@ class Str
         }
         return $str;
     }
-
     /**
      * @param $str
      * @param $limit

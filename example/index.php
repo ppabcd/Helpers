@@ -49,6 +49,19 @@ for ($i = 0; $i < 10; $i++) {
 }
 
 //
+// Example Reverse Case
+//
+$string = 'tESt stRinG';
+$arr_str = [
+  'tESt stRìnG',
+  'HëLlO wORld'
+];
+//String
+echo Str::reverse_case($string);
+// Array
+var_dump(Str::reverse_case($arr_str));
+
+//
 // Example Title Case
 //
 $string = 'hello world';
@@ -80,4 +93,3 @@ var_dump(Str::limit($arr_str, 3));
 $string = 'hello world';
 // String
 var_dump(Str::contains($string, 'hell'));
-
