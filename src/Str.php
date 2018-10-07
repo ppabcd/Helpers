@@ -127,7 +127,10 @@ class Str
             return mb_strtolower($str) ^ mb_strtoupper($str) ^ $str;;
         }
         foreach ($str as $key => $value) {
-            $str[$key] = mb_strtolower($value) ^ mb_strtoupper($value) ^ $value;;
+            $str[$key] = mb_strtolower($value) ^ mb_strtoupper($value) ^ $value;
+        }
+        return $str;
+    }
      /**
      * @param $str
      * @return array|string
