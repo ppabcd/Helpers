@@ -115,4 +115,48 @@ class Str
     {
         return substr((string)$haystack, 0, strlen($needle)) === (string) $needle;
     }
+
+    /**
+     * @param $str
+     * @return array|string
+     */
+    public static function title_case($str)
+    {
+        if (!is_array($str)) {
+            return ucwords(strtolower($str));
+        }
+        foreach ($str as $key => $value) {
+            $str[$key] = ucwords(strtolower($value));
+        }
+        return $str;
+    }
+
+    /**
+     * @param $str
+     * @param $limit
+     * @return array|bool|string
+     */
+    public static function limit($str, $limit)
+    {
+        if (!is_array($str)) {
+            return substr($str, 0, $limit);
+        }
+        foreach ($str as $key => $value) {
+            $str[$key] = substr($value, 0, $limit);
+        }
+        return $str;
+    }
+
+    /**
+     * @param $str
+     * @param $key
+     * @return bool
+     */
+    public static function contains($str, $key)
+    {
+        if (!is_string($str)) {
+            return false;
+        }
+        return strpos($str, $key) !== false;
+    }
 }
