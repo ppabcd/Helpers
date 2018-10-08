@@ -1,4 +1,5 @@
 <?php
+namespace Helpers;
 /**
  * String Class
  */

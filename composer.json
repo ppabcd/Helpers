@@ -21,13 +21,13 @@
         }
     ],
     "autoload": {
-    	"psr-0": {
-    		"Helpers": "src/"
+    	"psr-4": {
+    		"Helpers\\": "src/"
     	}
     },
     "autoload-dev": {
-    	"psr-0": {
-    		"": "tests/"
+    	"psr-4": {
+    		"Helpers\\": "tests/"
     	}
     }
 }

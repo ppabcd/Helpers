@@ -1,8 +1,7 @@
 <?php
+namespace Helpers\Tests\StrTest;
 
-namespace StrTest;
-
-use Str;
+use Helpers\Str;
 use PHPUnit\Framework\TestCase;
 
 class TitleCaseTest extends TestCase
