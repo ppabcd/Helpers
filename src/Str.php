@@ -173,4 +173,19 @@ class Str
         }
         return strpos($str, $key) !== false;
     }
+
+    /**
+     * camelize string
+     * eg. this_is_my_string => ThisIsMyString
+     *
+     * @param  string $str
+     * @param  string $encoding
+     * @return string
+     */
+    public static function camelize($str, $encoding = 'UTF-8')
+    {
+        $str = str_replace(array('_','-'), ' ', trim(strtolower($str)));
+        $str = mb_convert_case($str, MB_CASE_TITLE, $encoding);
+        return preg_replace('!\s+!', '', $str);
+    }
 }

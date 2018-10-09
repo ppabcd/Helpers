@@ -93,3 +93,10 @@ var_dump(Str::limit($arr_str, 3));
 $string = 'hello world';
 // String
 var_dump(Str::contains($string, 'hell'));
+
+//
+// Example camelize
+//
+$string = 'hello-world_example test';
+// String
+var_dump(Str::camelize($string));
