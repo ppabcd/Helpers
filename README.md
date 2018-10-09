@@ -3,29 +3,25 @@
 ### How to use?
 First time you must include src/Str.php in your project for use this helper. Coming soon i will add this project with composer. For Example code you can see in example folder.
 
-### What i can do?
-Here in list.
-1. Strip Quotes
-2. Strip Slashes
-3. Random String
-4. Alternator
+### How to use Helpers?
+there is many types of uses. they are mention below.
 
-#### Strip Quotes
-You can use this helper for string or multiple data with array.
+#### 1. Strip Quotes
+You can use strip Quotes helper for string or multiple data with array.
 ```php
   $data = 'Test String "';
   Str::strip_quotes($data);
 ```
 
-#### Strip Slashes
-You can use this helper for string or multiple data with array.
+#### 2. Strip Slashes
+You can use Strip Slashes helper for string or multiple data with array.
 ```php
   $data = 'Test String \' ';
   Str::strip_slashes($data);
 ```
 
-#### Random String
-You can use this helper for random string.
+#### 3. Random String
+You can use Random String helper for random string in data.
 Here in list.
 1. **alnum** for Alphanumeric
 2. **alpha** for Alphabet
@@ -44,8 +40,8 @@ Here in list.
   Str::random(18,'binary'); //Binary result
 ```
 
-#### Alternator
-You can use this helper for alternating.
+#### 4. Alternator
+You can use Alternator helper for alternating.
 
 ```php
   for ($i = 0; $i < 10; $i++)
@@ -54,7 +50,7 @@ You can use this helper for alternating.
       }
 ```
 
-#### Reverse Case
+#### 5. Reverse Case
 You can use this helper to reverse the case of each letter in a string.
  ```php
     $data = 'tESt stRinG';
@@ -62,17 +58,18 @@ You can use this helper to reverse the case of each letter in a string.
     // Test String
 ```
 
-#### Title Case
-You can use this helper for making a string or array of strings title case.
+#### 6. Title Case
+You can use Title Case helper for making a string or array of strings title case.
 
 ```php
     $data = 'test strinG';
     Str::title_case($data);
     // Test String
 ```
+ 
+#### 7. Limit
+You can use Limit helper to limit a string or array of strings up to specified length.
 
-#### Limit
-You can use this helper to limit a string or array of strings up to specified length.
 
 ```php
     $data = 'test string';
@@ -80,20 +77,27 @@ You can use this helper to limit a string or array of strings up to specified le
     // test
 ```
 
-#### Contains
-You can use this helper to check if specific word or key exists in a string.
+#### 8. Contains
+You can use Contains helper to check if specific word or key exists in a string.
 
 ```php
     $data = 'test string';
     Str::contains($data, 'test');
     // true
 ```
-
-#### Camelize
-You can use this helper to camelize a string.
+#### 9. Camelize
+You can use Camelize helper to camelize a string.
 
 ```php
     $data = 'example_test-string';
     Str::camelize($data);
     // ExampleTestString
 ```
+
+## Contributing
+
+* **Punit Kathiriya** - *Developer* - [punitakathiriya](https://github.com/punitakathiriya/) 
+[Website](http://www.chamodshehanka.com)
+
+See also the list of [contributors]() who participated in this project.
+
