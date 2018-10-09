@@ -96,5 +96,5 @@ You can use Camelize helper to camelize a string.
 
 ## Contributing
 
-See also the list of [contributors]() who participated in this project.
+See also the list of [contributors](CONTRIBUTING.md) who participated in this project.
 
