@@ -70,14 +70,14 @@ You can use this helper for making a string or array of strings title case.
     Str::title_case($data);
     // Test String
 ```
- 
+
 #### Limit
 You can use this helper to limit a string or array of strings up to specified length.
 
 ```php
     $data = 'test string';
     Str::limit($data, 4);
-    // test 
+    // test
 ```
 
 #### Contains
@@ -87,4 +87,13 @@ You can use this helper to check if specific word or key exists in a string.
     $data = 'test string';
     Str::contains($data, 'test');
     // true
+```
+
+#### Camelize
+You can use this helper to camelize a string.
+
+```php
+    $data = 'example_test-string';
+    Str::camelize($data);
+    // ExampleTestString
 ```
