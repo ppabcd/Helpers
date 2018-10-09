@@ -96,8 +96,5 @@ You can use Camelize helper to camelize a string.
 
 ## Contributing
 
-* **Punit Kathiriya** - *Developer* - [punitakathiriya](https://github.com/punitakathiriya/) 
-[Website](http://www.chamodshehanka.com)
-
 See also the list of [contributors]() who participated in this project.
 
