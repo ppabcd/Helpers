@@ -1,5 +1,13 @@
 # Contributing
 
+## How To
+* Add all PHP Classes files into *src* folder
+* Add example Helpers in example folder.
+* Don't forget to add the Unit Tests in *test* folder.
+
+## People contributing
+
+
 * **Braunson Yager** - *Developer, Documentation* - [GitHub](https://github.com/braunson/) / 
 [Website](https://www.braunson.ca)
 
