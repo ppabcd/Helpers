@@ -132,6 +132,39 @@ Determine if two arrays are identical with the same index values ignoring key or
     // true
 ```
 
+#### 13. Snake case
+Return snake case format of the given string
+
+```php
+    $string = 'heLLo World ya`ll';
+    
+    Str::snake_case($string));
+    // hello_world_ya`ll
+    # With delimiter
+    Str::snake_case($string, '-'));
+    // hello-world-ya`ll
+```
+
+#### 13. Lower case
+Return lower case of the given string. Works with UTF-8
+
+```php
+    $string = 'Hello WorLD';
+    
+    Str::snake_case($string));
+    // hello world
+```
+
+#### 13. Upper case
+Return upper case of the given string. Works with UTF-8
+
+```php
+    $string = 'Hello WorLD';
+    
+    Str::snake_case($string));
+    // HELLO WORLD
+```
+
 ## Contributing
 
 See also the list of [contributors](CONTRIBUTING.md) who participated in this project.

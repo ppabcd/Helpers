@@ -1,5 +1,8 @@
 <?php
-require_once('../src/Str.php');
+require_once __DIR__. '/../vendor/autoload.php';
+
+use Helpers\Str;
+
 //
 // Example Random
 //
@@ -100,3 +103,31 @@ var_dump(Str::contains($string, 'hell'));
 $string = 'hello-world_example test';
 // String
 var_dump(Str::camelize($string));
+
+//
+// Example upper case
+//
+$string = 'heLLo World';
+// String
+var_dump(Str::upper_case($string));
+
+//
+// Example lower case
+//
+$string = 'heLLo World';
+// String
+var_dump(Str::lower_case($string));
+
+//
+// Example snake case
+//
+$string = 'heLLo World ya`ll';
+// String
+var_dump(Str::snake_case($string));
+
+//
+// Example snake case with delimiter
+//
+$string = 'heLLo World ya`ll';
+// String
+var_dump(Str::snake_case($string, '-'));
