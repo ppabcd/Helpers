@@ -253,4 +253,27 @@ class Str
     {
         return array_key_start_end_with($array, $string, $returnKeys, 'ends_with');
     }
+    
+    /**
+     * Determine if two arrays are identical with the same 
+     * index values ignoring key ordering
+     * 
+     * @param array $array1
+     * @param array $array2
+     * @return bool
+     */
+    public static function arrays_match($array1, $array2)
+    {
+        if (count(array_diff_assoc($array1, $array2))) {
+            return false;
+        }
+        
+        foreach($array1 as $k => $v) {
+            if ($v !== $array2[$k]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
