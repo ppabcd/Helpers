@@ -17,21 +17,6 @@ class ArrayEndsWithTest extends TestCase
         $processed = Str::array_keys_end_with($array, 'foo');
         $expected = ['foo' => 'bar'];
         
-        $this->assertTrue($this->arrays_match($processed, $expected));
-    }
-    
-    protected function arrays_match($array1, $array2)
-    {
-        if (count(array_diff_assoc($array1, $array2))) {
-            return false;
-        }
-        
-        foreach($array1 as $k => $v) {
-            if ($v !== $array2[$k]) {
-                return false;
-            }
-        }
-
-        return true;
+        $this->assertTrue(Str::arrays_match($processed, $expected));
     }
 }
