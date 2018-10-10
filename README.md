@@ -94,6 +94,44 @@ You can use Camelize helper to camelize a string.
     // ExampleTestString
 ```
 
+#### 10. Array key starts with
+You can use Array key starts with helper to find an array key that starts with a given term
+
+```php
+    $array = [
+      'pizza pie' => 'nomnom',
+      'hot dog' => 'ohnomnom'
+    ];
+    
+    Str::array_key_starts_with($array, 'hot');
+    // ['hot dog' => 'ohnomnom']
+```
+
+#### 11. Array key ends with
+You can use Array key ends with helper to find an array key that ends with a given term
+
+```php
+    $array = [
+      'pizza pie' => 'nomnom',
+      'hot dog' => 'ohnomnom'
+    ];
+    
+    Str::array_key_ends_with($array, 'pie');
+    // ['pizza pie' => 'nomnom']
+```
+
+#### 12. Arrays are identical
+Determine if two arrays are identical with the same index values ignoring key ordering
+
+```php
+    $array = [
+      'foo' => 'bar'
+    ];
+    
+    Str::arrays_match($array, $array);
+    // true
+```
+
 ## Contributing
 
 See also the list of [contributors](CONTRIBUTING.md) who participated in this project.

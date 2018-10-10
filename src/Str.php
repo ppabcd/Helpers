@@ -189,4 +189,91 @@ class Str
         $str = mb_convert_case($str, MB_CASE_TITLE, $encoding);
         return preg_replace('!\s+!', '', $str);
     }
+    
+    /**
+     * Search an array for keys that start or end with string provided
+     *
+     * USAGE:
+     * array_key_start_end_with(['bob' => 'bobtail cat'], 'cat', true, 'starts_with');
+     *
+     * @param  array   $array
+     * @param  string  $string
+     * @param  boolean $returnKeys
+     * @param  string  $direction (expects starts_with or ends_with)
+     * @return array
+     */
+    public static function array_key_start_end_with(array $array, string $string, bool $returnKeys = true, string $direction): array
+    {
+        $newArray = [];
+        foreach ($array as $key => $value) {
+            if ($direction($key, $string)) {
+                if (is_string($value)) {
+                    $value = trim($value);
+                    $value = empty(trim($value, '"')) ? null : $value ;
+                }
+                if ($returnKeys) {
+                    array_push($newArray, $key);
+                } else {
+                    $newArray[$key] = $value; // Maintain the key value relationship
+                }
+            }
+        }
+        
+        return $newArray;
+    }
+    
+    /**
+     * Search an array for keys that starts_with string
+     *
+     * USAGE:
+     * array_keys_start_with(['bob' => 'bobtail cat'], 'cat', true);
+     *
+     * @param  array   $array
+     * @param  string  $string
+     * @param  boolean $returnKeys
+     * @return array
+     */
+    public static function array_keys_start_with(array $array, string $string, bool $returnKeys = true): array
+    {
+        return array_key_start_end_with($array, $string, $returnKeys, 'starts_with');
+    }
+    
+    /**
+     * Search an array for keys that ends_with string
+     *
+     * USAGE:
+     * array_keys_end_with(['bob' => 'bobtail cat'], 'bobtail', true);
+     *
+     * @param  array   $array
+     * @param  string  $string
+     * @param  boolean $returnKeys 
+     * @return array
+     */
+    public static function array_keys_end_with(array $array, string $string, bool $returnKeys = true): array
+    {
+        return array_key_start_end_with($array, $string, $returnKeys, 'ends_with');
+    }
+    
+    /**
+     * Determine if two arrays are identical with the same 
+     * index values ignoring key ordering
+     * 
+     * @param array $array1
+     * @param array $array2
+     * @return bool
+     */
+    public static function arrays_match($array1, $array2)
+    {
+        if (count(array_diff_assoc($array1, $array2))) {
+            return false;
+        }
+        
+        foreach($array1 as $k => $v) {
+            if ($v !== $array2[$k]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
