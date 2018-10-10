@@ -10,10 +10,11 @@ class ArraysMatchTest extends TestCase
     public function testString()
     {
         $array = [
-          'foo' => 'bar'
+            'foo' => 'bar'
         ];
-        
+
         $match = Str::arrays_match($array, $array);
-        
+
         $this->assertTrue($match);
     }
+}

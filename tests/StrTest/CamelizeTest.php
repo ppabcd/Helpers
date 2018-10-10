@@ -2,7 +2,7 @@
 
 namespace StrTest;
 
-use Str;
+use Helpers\Str;
 use PHPUnit\Framework\TestCase;
 
 class CamelizeTest extends TestCase

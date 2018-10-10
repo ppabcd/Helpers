@@ -10,7 +10,9 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.6",
+        "php": ">=5.6"
+    },
+    "require-dev": {
         "phpunit/phpunit": "^6.4"
     },
     "authors": [
@@ -21,13 +23,14 @@
         }
     ],
     "autoload": {
-    	"psr-4": {
-    		"Helpers\\": "src/"
-    	}
+        "psr-4": {
+            "Helpers\\": "src/"
+        }
     },
     "autoload-dev": {
-    	"psr-4": {
-    		"Helpers\\": "tests/"
-    	}
-    }
+        "psr-4": {
+            "Helpers\\": "tests/"
+        }
+    },
+    "prefer-stable": true
 }
