@@ -99,7 +99,7 @@ You can use Array key starts with helper to find an array key that starts with a
 
 ```php
     $array = [
-      'pizza pie' => 'nomnom'
+      'pizza pie' => 'nomnom',
       'hot dog' => 'ohnomnom'
     ];
     
@@ -112,12 +112,24 @@ You can use Array key ends with helper to find an array key that ends with a giv
 
 ```php
     $array = [
-      'pizza pie' => 'nomnom'
+      'pizza pie' => 'nomnom',
       'hot dog' => 'ohnomnom'
     ];
     
     Str::array_key_ends_with($array, 'pie');
     // ['pizza pie' => 'nomnom']
+```
+
+#### 12. Arrays are identical
+Determine if two arrays are identical with the same index values ignoring key ordering
+
+```php
+    $array = [
+      'foo' => 'bar'
+    ];
+    
+    Str::arrays_match($array, $array);
+    // true
 ```
 
 ## Contributing
