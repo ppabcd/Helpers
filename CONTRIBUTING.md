@@ -15,3 +15,5 @@
 [Website](http://www.chamodshehanka.com)
 
 * **Alberto Berroteran** - *Documentation* - [ashrey](https://github.com/Ashrey/)
+
+* **Stefan Brankovik** - *Developer* - [GitHub](https://github.com/KenoKokoro/)
