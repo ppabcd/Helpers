@@ -151,7 +151,7 @@ Return lower case of the given string. Works with UTF-8
 ```php
     $string = 'Hello WorLD';
     
-    Str::snake_case($string));
+    Str::lower_case($string));
     // hello world
 ```
 
@@ -161,7 +161,7 @@ Return upper case of the given string. Works with UTF-8
 ```php
     $string = 'Hello WorLD';
     
-    Str::snake_case($string));
+    Str::upper_case($string));
     // HELLO WORLD
 ```
 
