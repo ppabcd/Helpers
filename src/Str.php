@@ -337,4 +337,16 @@ class Str
 
         return static::$snakeCache[$key][$delimiter] = $value;
     }
+
+    /**
+     * @param string $str
+     * @param int    $start
+     * @param int    $length
+     * @param string $encoding
+     * @return string
+     */
+    public static function substr(string $str , int $start, int $length = NULL , string $encoding = '')
+    {
+        return mb_substr($str, $start, $length, ($encoding == '') ? mb_internal_encoding() : $encoding);
+    }
 }
